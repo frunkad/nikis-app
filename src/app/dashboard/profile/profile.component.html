@@ -1,3 +1,19 @@
-<p>
-  profile works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <img class="rounded-circle mx-auto d-block" src="assets/user.jpg" alt="">
+  </div>
+  <div class="col-12 text-center text-uppercase mt-2">
+    <h2>{{student['name']}}</h2>
+  </div>
+  <div class="col-12 text-center">
+    <p class="muted">B.Tech First Year</p>
+  </div>
+  <div class="col-12 text-center">
+    <h4>STUDENT</h4>
+  </div>
+  <div class="col-12 text-center mt-3">
+    <ul>
+      <li *ngFor="let club of student['clubs']">{{club}}</li>
+    </ul>
+  </div>
+</div>

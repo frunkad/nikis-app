@@ -4,7 +4,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">@</span>
       </div>
-      <input type="text" class="form-control" placeholder="College ID or Email ID" aria-label="Username"
+      <input type="text" class="form-control" [formControl]="usernameFormControl" placeholder="College ID or Email ID" aria-label="Username"
         aria-describedby="basic-addon1">
     </div>
   </div>
@@ -13,12 +13,12 @@
       <div class=" input-group-prepend">
         <span class=" input-group-text" id="basic-addon1">!</span>
       </div>
-      <input type="text" class=" form-control" placeholder="Password" aria-label="Username"
+      <input type="password" class="form-control" [formControl]="passwordFormControl" placeholder="Password" aria-label="Username"
         aria-describedby="basic-addon1">
     </div>
   </div>
   <div class="col-12 row justify-content-center">
-      <button type="submit" class="btn btn-light">Login</button>
+      <button type="submit" (click)="checkLogin()" class="btn btn-light">Login</button>
   </div>
 </form>
 <div class="row mt-5 justify-content-center">
