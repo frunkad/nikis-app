@@ -1,0 +1,33 @@
+.input-group {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .login-input {
+      
+      .form-control {
+          background: #a1d9fad1;
+          border-radius: 0 10px 10px 0;
+          color: #fff;
+          border-left: 0;
+          padding: .375rem 0;
+          &::placeholder {
+              // TODO
+              color: #fff !important;
+          }
+          &:focus {
+              box-shadow: none;
+              border-color: #ced4da;
+          }
+      }
+      .input-group-text {
+          background: #a1d9fad1;
+          border-radius: 10px 0 0 10px;
+          color: #fff;
+          border-right: 0;
+      }
+  }
