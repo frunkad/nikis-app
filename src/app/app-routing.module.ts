@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './dashboard/about/about.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { EventsComponent } from './dashboard/events/events.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
     'children': [
       { 'path': 'about', 'component': AboutComponent },
       { 'path': 'profile', 'component': ProfileComponent },
+      { 'path': 'events', 'component': EventsComponent },
       { 'path': '', 'component': ProfileComponent }
     ]
   },

@@ -6,18 +6,22 @@ import { DashboardComponent } from './dashboard.component';
 import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { AboutComponent } from './about/about.component';
+import { MatListModule } from '@angular/material/list';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ProfileComponent,
-    AboutComponent
+    AboutComponent,
+    EventsComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     MatSidenavModule,
-    RouterModule
+    RouterModule,
+    MatListModule
   ]
 })
 export class DashboardModule { }
