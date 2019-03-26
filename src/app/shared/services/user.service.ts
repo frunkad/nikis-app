@@ -35,4 +35,15 @@ export class UserService {
   logout() {
     localStorage.setItem('currentUser', '');
   }
+
+  addUser(username: string, password: string, name: string) {
+    users[username] = <User> {
+      'username': username,
+      'clubs': ['GMT', 'CamCircle'],
+      'email': 'hi@example.com',
+      'name': name,
+      'password': password
+    };
+    localStorage.setItem('users', JSON.stringify(users));
+  }
 }

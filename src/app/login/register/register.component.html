@@ -4,7 +4,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">@</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+      <input type="text" [formControl]="usernameFormControl" class="form-control" placeholder="Username" aria-label="Username"
         aria-describedby="basic-addon1">
     </div>
   </div>
@@ -13,7 +13,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon2">@</span>
       </div>
-      <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+      <input type="text" [formControl]="nameFormControl" class="form-control" placeholder="Name" aria-label="Name"
         aria-describedby="basic-addon2">
     </div>
   </div>
@@ -22,7 +22,7 @@
       <div class=" input-group-prepend">
         <span class=" input-group-text" id="basic-addon1">!</span>
       </div>
-      <input type="password" class=" form-control" placeholder="Password" aria-label="Password"
+      <input type="password" [formControl]="passwordFormControl" class=" form-control" placeholder="Password" aria-label="Password"
         aria-describedby="basic-addon1">
     </div>
   </div>
@@ -31,11 +31,11 @@
       <div class=" input-group-prepend">
         <span class=" input-group-text" id="basic-addon1">!!</span>
       </div>
-      <input type="password" class=" form-control" placeholder="Repeat Password" aria-label="Username"
+      <input type="password" [formControl]="password2FormControl" class=" form-control" placeholder="Repeat Password" aria-label="Password Repeat"
         aria-describedby="basic-addon1">
     </div>
   </div>
   <div class="col-12 row justify-content-center">
-    <button type="submit" class="btn btn-light">Sign Up</button>
+    <button (click)="submit()" type="submit" class="btn btn-light">Sign Up</button>
   </div>
 </form>
