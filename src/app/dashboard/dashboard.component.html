@@ -1,9 +1,10 @@
 <mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
   <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
       <mat-nav-list>
-          <a mat-list-item routerLink="events" >Upcoming Events </a>
-          <a mat-list-item routerLink="profile" >Profile </a>
-          <a mat-list-item routerLink="about" >About </a>
+          <a mat-list-item (click)="close('link')" routerLink="profile" >Profile </a>
+          <a mat-list-item (click)="close('link')" routerLink="events" >My Events </a>
+          <a mat-list-item (click)="close('link')" routerLink="upcoming" >Upcoming Event </a>
+          <a mat-list-item (click)="close('link')" routerLink="about" >About </a>
           <a mat-list-item  (click)="logout()">Logout </a>
        </mat-nav-list>
   </mat-sidenav>

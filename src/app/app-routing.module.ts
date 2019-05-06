@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './dashboard/about/about.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { EventsComponent } from './dashboard/events/events.component';
+import { UpcomingComponent } from './dashboard/upcoming/upcoming.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       { 'path': 'about', 'component': AboutComponent },
       { 'path': 'profile', 'component': ProfileComponent },
       { 'path': 'events', 'component': EventsComponent },
+      { 'path': 'upcoming', 'component': UpcomingComponent },
       { 'path': '', 'component': ProfileComponent }
     ]
   },

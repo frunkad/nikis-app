@@ -8,13 +8,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { AboutComponent } from './about/about.component';
 import { MatListModule } from '@angular/material/list';
 import { EventsComponent } from './events/events.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ProfileComponent,
     AboutComponent,
-    EventsComponent
+    EventsComponent,
+    UpcomingComponent
   ],
   imports: [
     CommonModule,
